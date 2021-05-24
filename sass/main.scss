@@ -1,0 +1,47 @@
+$font-texte: 'Roboto', sans-serif;
+$font-logo-titres: 'Shrikhand', cursive;
+/*Couleurs principales*/
+$couleur-primaire: #9356DC;
+$couleur-secondaire: #FF79DA;
+$couleur-tertiaire: #99E2D0;
+/*Couleurs supplémentaires*/
+$couleur-grisclair: #F6F6F6; 
+$couleur-grismoyen: #D5D5D5;
+$couleur-grisfonce: #353535;
+
+//logo
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    position: relative;
+    a {
+        font-size: 1em;
+        padding: 10px;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+    }
+}
+
+//Localisation
+
+#localisation {
+    font-family: $font-texte;
+    .localisation__icone {
+        font-size: 1em;
+        font-weight: 500;
+        color: $couleur-grisfonce;
+        text-align: center;
+        background-color: darken($couleur-grisclair, 5);
+        padding: 13px 0;
+        box-shadow: inset 0 2.5px 3px $couleur-grismoyen;
+        i {
+            padding-right: 10px;
+        }
+        h4 {
+            display: inline-block;
+        }
+    }
+}

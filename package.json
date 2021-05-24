@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch css/main.scss:.css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elaudie/ElodieRie_3_09052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elaudie/ElodieRie_3_09052021/issues"
+  },
+  "homepage": "https://github.com/Elaudie/ElodieRie_3_09052021#readme"
+  }
