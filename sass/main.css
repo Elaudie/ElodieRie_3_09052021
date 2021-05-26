@@ -1,9 +1,23 @@
-@charset "UTF-8";
-/*Couleurs principales*/
-/*Couleurs supplémentaires*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes heart {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .logo {
@@ -275,5 +289,10 @@ footer li i {
   color: white;
   width: 17px;
   padding-right: 25px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */
