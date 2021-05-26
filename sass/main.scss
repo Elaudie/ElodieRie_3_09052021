@@ -5,9 +5,15 @@ $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 /*Couleurs supplémentaires*/
-$couleur-grisclair: #F6F6F6; 
-$couleur-grismoyen: #D5D5D5;
-$couleur-grisfonce: #353535;
+$grisclair: #F6F6F6; 
+$grismoyen: #D5D5D5;
+$grisfonce: #353535;
+
+//page
+
+* {
+    box-sizing: border-box;
+}
 
 //logo
 
@@ -27,21 +33,54 @@ $couleur-grisfonce: #353535;
 
 //Localisation
 
-#localisation {
+.localisation {
     font-family: $font-texte;
     .localisation__icone {
         font-size: 1em;
-        font-weight: 500;
-        color: $couleur-grisfonce;
+        color: $grisfonce;
         text-align: center;
-        background-color: darken($couleur-grisclair, 5);
-        padding: 13px 0;
-        box-shadow: inset 0 2.5px 3px $couleur-grismoyen;
+        background-color: darken($grisclair, 5);
+        box-shadow: inset 0 2.5px 3px $grismoyen;
         i {
             padding-right: 10px;
         }
         h4 {
             display: inline-block;
+        }
+    }
+}
+
+//Présentation du site
+
+.presentation {
+    font-family: $font-texte;
+    background-color: $grisclair;
+    align-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    .presentation__site {
+        h2 {
+            text-align: center;
+            justify-content: center;
+            padding: 0 80px;
+            }
+        p {
+            text-align: center;
+            }
+        }
+    .presentation__btn {
+        margin: 10px 0 20px 0;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        padding-top: 15px;
+        a {
+        background-image: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+        border-radius: 50px;
+        box-shadow: 3px 5px 7px $grismoyen;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
         }
     }
 }
