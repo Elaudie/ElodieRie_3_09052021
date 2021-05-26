@@ -92,7 +92,7 @@
 }
 
 .fonctionnement h3 {
-  padding: 30px 20px;
+  padding: 30px 20px 10px;
 }
 
 .fonctionnement .fonctionnement__site {
@@ -208,11 +208,15 @@
 .carte h4 {
   padding-left: 15px;
   color: black;
+  padding-bottom: 0;
+  margin: 10px 0 0;
 }
 
 .carte p {
   padding-left: 15px;
   color: black;
+  padding-bottom: 0;
+  margin: 5px 0 0;
 }
 
 .carte--nouveau {

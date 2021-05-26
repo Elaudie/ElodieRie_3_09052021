@@ -91,7 +91,7 @@ $grisfonce: #353535;
 .fonctionnement {
     font-family: $font-texte;
     h3 {
-        padding: 30px 20px;
+        padding: 30px 20px 10px;
     }
     .fonctionnement__site {
         display: flex;
@@ -175,10 +175,14 @@ $grisfonce: #353535;
     h4 {
         padding-left: 15px;
         color: black;
+        padding-bottom: 0;
+        margin: 10px 0 0;
     }
     p {
         padding-left: 15px;
         color: black;
+        padding-bottom: 0;
+        margin: 5px 0 0;
     }
         &--nouveau {
             width: 85px;
