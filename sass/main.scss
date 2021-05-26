@@ -66,6 +66,7 @@ $grisfonce: #353535;
             }
         p {
             text-align: center;
+            padding: 10px 45px;
             }
         }
     .presentation__btn {
@@ -83,4 +84,57 @@ $grisfonce: #353535;
         text-decoration: none;
         }
     }
+}
+
+//Mode d'emploi
+
+.fonctionnement {
+    font-family: $font-texte;
+    h3 {
+        padding: 30px 20px;
+    }
+    .fonctionnement__site {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.site__btn {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 65px;
+    background-color: $grisclair;
+    border-radius: 15px;
+    box-shadow: 1px 2px 11px $grismoyen;
+    margin: 0 0 30px 0;
+    position: relative;
+    cursor: pointer;
+    .btn__numero {
+        width: 23px;
+        height: 23px;
+        color: white;
+        text-align: center;
+        background-color: $couleur-primaire;
+        border-radius: 25px;
+        position: absolute;
+        line-height: 24px;
+    }
+    i {
+        width: 15px;
+        color: $grismoyen;
+        padding: 0 10px 0 30px;
+    }
+    p {
+        font-weight: 500;
+        padding-left: 20px;
+    }
+    &--actif {
+        background-color: darken($grisclair, 3);
+        i {
+            color: $couleur-primaire;
+        }
+    }
+
 }
