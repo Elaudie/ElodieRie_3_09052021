@@ -1,5 +1,5 @@
-@media screen and (min-width: 768px) {
-    .restaurant__conteneur {
+@media only screen and (min-width: 768px) {
+    .restaurants__conteneur {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;

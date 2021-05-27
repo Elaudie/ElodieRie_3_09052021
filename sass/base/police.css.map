@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "variables.scss"
+        "police.scss"
     ],
     "names": [],
-    "file": "variables.css"
+    "file": "police.css"
 }
