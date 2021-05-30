@@ -311,4 +311,61 @@ footer li i {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .menu__img {
+  width: 100%;
+}
+
+.menu .menu__img img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu .menu__element {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.element__titre h2 {
+  font-family: "Shrikhand";
+}
+
+.element__titre .fa-heart {
+  position: absolute;
+}
+
+.element__carte {
+  font-family: "Roboto Regular", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.element__carte .carte__bloc {
+  margin: 20px 0 30px 0;
+}
+
+.element__carte .carte__bloc h3 {
+  text-transform: uppercase;
+}
+
+.element__carte .carte__bloc h3:after {
+  display: block;
+  background: none repeat scroll 0 0 #99E2D0;
+  position: relative;
+}
+
+.element__carte .objet__btn a {
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */

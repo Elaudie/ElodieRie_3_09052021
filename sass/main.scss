@@ -18,3 +18,58 @@
 * {
     box-sizing: border-box;
 }
+
+//Pages restaurants
+
+.menu {
+    display: flex;
+    .menu__img {
+        width: 100%;
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .menu__element {
+        width: 100%;
+        background-color: $grisclair;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+}
+
+.element__titre {
+    h2 {
+        font-family: $font2;
+    }
+    .fa-heart {
+        position: absolute;
+    }
+}
+
+.element__carte {
+    font-family: $font-texte;
+    display: flex;
+    .carte__bloc {
+        margin: 20px 0 30px 0;
+        h3 {
+            text-transform: uppercase;
+            &:after {
+                display: block;
+                background: none repeat scroll 0 0 $couleur-tertiaire;
+                position: relative;
+            }    
+        }
+    }
+
+    .objet__btn {
+        a {
+            color: white;
+        }
+        &:hover {
+            //voir quoi mettre ici.
+        }
+    }
+}
