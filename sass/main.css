@@ -11,6 +11,18 @@
   }
 }
 
+@font-face {
+  font-family: 'Shrikhand-Regular';
+  src: url("Shrikhand-Regular.ttf.woff") format("woff"), url("Shrikhand-Regular.ttf.svg#Shrikhand-Regular") format("svg"), url("Shrikhand-Regular.ttf.eot"), url("Shrikhand-Regular.ttf.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("Roboto-Regular.woff") format("woff");
+}
+
 @-webkit-keyframes heart {
   0% {
     -webkit-transform: scaleY(0);
@@ -45,7 +57,7 @@
 }
 
 .localisation {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 .localisation .localisation__icone {
@@ -66,7 +78,7 @@
 }
 
 .presentation {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   background-color: #F6F6F6;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -107,7 +119,7 @@
 }
 
 .fonctionnement {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 .fonctionnement h3 {
@@ -177,7 +189,7 @@
 }
 
 .restaurants {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   background-color: #F6F6F6;
   margin-bottom: 30px;
 }
@@ -260,7 +272,7 @@
 }
 
 footer {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   color: white;
   background-color: #353535;
   padding: 20px 20px 30px 20px;
