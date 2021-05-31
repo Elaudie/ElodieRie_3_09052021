@@ -36,9 +36,9 @@
     .menu__element {
         width: 100%;
         margin-top: -60px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         background-color: $grisclair;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
     }
 }
 
@@ -64,16 +64,51 @@
                 display: block;
                 background: none repeat scroll 0 0 $couleur-tertiaire;
                 position: relative;
+                width: 50px;
+                height: 3px;
             }    
         }
     }
 
-    .objet__btn {
-        a {
-            color: white;
+.carte__container {
+    display: flex; 
+    flex-direction: column;
+    .carte__objet {
+        .objet__btn {
+            background-color: white;
+            border-radius: 15px;
+            display: block;
+            width: 95%;
+            height: 40px;
+            box-shadow: 5px 5px 15px $grismoyen;
+            cursor: pointer;
+            margin-bottom: 17px;
+            p {
+                display: block;
+            }
         }
-        &:hover {
-            //voir quoi mettre ici.
+        .objet__prix {
+            background-color: white;
         }
     }
+}
+
+
+.commander {
+    text-align: center;
+    width: 250px;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    margin: 25px auto 40px auto;
+    position: relative;
+    box-shadow : 5px 5px 7px $grismoyen;
+    background-color: $couleur-primaire;
+    z-index: 1;
+    border-radius: 55px;
+    background-image: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+    a {
+       padding: 20px 55px;
+    }
+}
 }
