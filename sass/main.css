@@ -280,7 +280,7 @@ footer {
 }
 
 footer h3 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand-Regular";
   margin-bottom: 15px;
 }
 
@@ -311,6 +311,8 @@ footer li i {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -343,11 +345,13 @@ footer li i {
 }
 
 .element__titre h2 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand-Regular";
 }
 
 .element__titre .fa-heart {
   position: absolute;
+  right: 30px;
+  font-size: 25px;
 }
 
 .element__carte {
@@ -386,6 +390,7 @@ footer li i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: -40px;
 }
 
 .element__carte .carte__container .carte__objet .objet__btn {
@@ -393,7 +398,7 @@ footer li i {
   border-radius: 15px;
   display: block;
   width: 95%;
-  height: 40px;
+  height: 60px;
   -webkit-box-shadow: 5px 5px 15px #D5D5D5;
           box-shadow: 5px 5px 15px #D5D5D5;
   cursor: pointer;

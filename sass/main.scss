@@ -17,6 +17,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 //Pages restaurants
@@ -48,6 +50,8 @@
     }
     .fa-heart {
         position: absolute;
+        right: 30px;
+        font-size: 25px;
     }
 }
 
@@ -73,13 +77,14 @@
 .carte__container {
     display: flex; 
     flex-direction: column;
+    margin-top: -40px;
     .carte__objet {
         .objet__btn {
             background-color: white;
             border-radius: 15px;
             display: block;
             width: 95%;
-            height: 40px;
+            height: 60px;
             box-shadow: 5px 5px 15px $grismoyen;
             cursor: pointer;
             margin-bottom: 17px;
