@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Shrikhand-Regular';
-    src:url('Shrikhand-Regular.ttf.woff') format('woff'),
-        url('Shrikhand-Regular.ttf.svg#Shrikhand-Regular') format('svg'),
-        url('Shrikhand-Regular.ttf.eot'),
-        url('Shrikhand-Regular.ttf.eot?#iefix') format('embedded-opentype');}
+    src:url('/font/Shrikhand-Regular.ttf.woff') format('woff'),
+        url('/font/Shrikhand-Regular.ttf.svg#Shrikhand-Regular') format('svg'),
+        url('/font/Shrikhand-Regular.ttf.eot'),
+        url('/font/Shrikhand-Regular.ttf.eot?#iefix') format('embedded-opentype');}
 
 @font-face {
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto-Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('Roboto-Regular.woff') format('woff');
+    src: url('/font/Roboto-Regular.woff') format('woff');
 }
         
         
 
-$font-texte: 'Roboto Regular', sans-serif;
+$font-texte: 'Roboto-Regular', sans-serif;
 $font2: 'Shrikhand-Regular';
