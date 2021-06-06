@@ -37,7 +37,6 @@
 
     .menu__element {
         width: 100%;
-        margin-top: -60px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         background-color: $grisclair;
@@ -48,7 +47,7 @@
 .element__titre {
     h2 {
         font-family: $font2;
-
+        padding-bottom: 25px;
     }
     .fa-heart {
         position: absolute;
@@ -62,10 +61,14 @@
     display: flex;
     flex-direction: column;
     .carte__bloc {
-        padding: 20px 0 30px 0;
         width:100%;
+        padding-bottom: 20px;
         h3 {
             text-transform: uppercase;
+            border-bottom : 3px solid $couleur-tertiaire;
+            margin-bottom : 10px;
+            max-width : 50px;
+            overflow-x : visible;
             &:after {
                 display: block;
                 background: none repeat scroll 0 0 $couleur-tertiaire;
@@ -94,6 +97,11 @@
                 display: block;
             }
         }
+
+        .objet__btn p:first-child {
+            font-weight: bold;
+        }
+
         .objet__prix {
             background-color: white;
         }
@@ -116,6 +124,8 @@
     background-image: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
     a {
        padding: 20px 55px;
+       text-decoration: none;
+       color: white;
     }
 }
 }
