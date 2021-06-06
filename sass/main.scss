@@ -44,6 +44,12 @@
     }
 }
 
+.arrow {
+    float: left; 
+    padding: 5px; 
+    color: black
+}
+
 .element__titre {
     h2 {
         font-family: $font2;
@@ -100,10 +106,17 @@
 
         .objet__btn p:first-child {
             font-weight: bold;
+            padding: 10px 0 0 10px;
+        }
+
+        .objet__btn p:nth-of-type(2){
+            padding-left: 10px;
         }
 
         .objet__prix {
             background-color: white;
+            padding-left: 280px;
+            margin-top: -18px;
         }
     }
 }
