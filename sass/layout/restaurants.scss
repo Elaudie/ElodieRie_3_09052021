@@ -1,6 +1,15 @@
 @import url(../base/police.scss);
 @import url(../utils/variables.scss);
 
+$font-texte: 'Roboto-Regular';
+$font2: 'Shrikhand-Regular';
+$couleur-primaire: #9356DC;
+$couleur-secondaire: #FF79DA;
+$couleur-tertiaire: #99E2D0;
+$grisclair: #F6F6F6; 
+$grismoyen: #D5D5D5;
+$grisfonce: #353535;
+
 //Restaurants
 
 .restaurants {
@@ -51,13 +60,6 @@
         padding-bottom: 0;
         margin: 5px 0 0;
     }
-        &__empty {
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-            font-size: 25px;
-            color: black;
-        }
         &--nouveau {
             width: 85px;
             line-height: 30px;
@@ -71,3 +73,32 @@
             right: 20px;
         }
 }
+
+.carte__heart {
+    .empty {
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        font-size: 25px;
+        fill: transparent;
+        opacity: 1;
+    }
+    .full {
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        font-size: 25px;
+        transform: scale(0);
+        background:linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+    }
+    &:hover {
+        .empty {
+            opacity: 0;
+        }
+        .full {  
+            transform: scale(1);
+            transition: transform 500ms ease-in-out;
+            transform-origin: bottom center;
+        }
+    }
+}  

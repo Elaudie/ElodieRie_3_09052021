@@ -114,9 +114,24 @@
         }
 
         .objet__prix {
+            position:absolute;
             background-color: white;
             padding-left: 280px;
-            margin-top: -18px;
+            bottom: 15px;
+        }
+
+        .btn__hover {
+            display: block;
+            font-size: 1.1em;
+            color: white;
+            text-align: center;
+            height: 60px;
+            padding: 10px 0;
+            width: 55px;
+            line-height: 40px;
+            background-color: $couleur-tertiaire;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
     }
 }
@@ -143,33 +158,48 @@
 }
 }
 
-.carte__heart {
-    .empty {
-        position: absolute;
-        bottom: 35px;
-        right: 20px;
-        font-size: 1.4em;
-        font-weight: normal;
-        fill: transparent;
-        opacity: 1;
-    }
-    .full {
-        position: absolute;
-        bottom: 35px;
-        right: 20px;
-        font-size: 1.4em;
-        font-weight: bold;
-        transform: scale(0);
-        background:linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
-    }
-    &:hover {
-        .empty {
-            opacity: 0;
+.objet__btn {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+        .objet__btn p:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
-        .full {  
-            transform: scale(1);
+        .objet__btn p:nth-of-type(2) {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .objet__prix {
+        right: 20px;
+        bottom: 0px;
+        transition: 400ms;
+    }
+    .btn__hover {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(55px);
+        transition: 400ms; 
+    }
+    .objet__btn:hover {
+        .objet__btn p:first-child {
+            width: 70%;
+            transition: width 500ms ease-in-out;
+        }
+        .objet__prix {
+            transform: translateX(-45px);
             transition: transform 500ms ease-in-out;
-            transform-origin: bottom center;
+        }
+        .btn__hover {
+            transform: translateX(0px);
+            transition: transform 500ms ease-in-out;
+        }
+        .btn__hover > i {
+            transform: rotate(360deg);
+            transition: transform 500ms ease-in-out;
         }
     }
-}  
