@@ -222,6 +222,7 @@ $font2: 'Shrikhand-Regular';
         font-size: 25px;
         fill: transparent;
         opacity: 1;
+        color: black;
     }
     .full {
         position: absolute;
@@ -239,6 +240,8 @@ $font2: 'Shrikhand-Regular';
             transform: scale(1);
             transition: transform 500ms ease-in-out;
             transform-origin: bottom center;
+            -webkit-background-clip: text;
+            color: transparent;
         }
     }
 }  
@@ -310,12 +313,39 @@ footer {
     h2 {
         font-family: $font2;
         padding-bottom: 25px;
-    }
+    }   
     .fa-heart {
         position: absolute;
         right: 30px;
         font-size: 25px;
+    } 
+    .empty {
+        position: absolute;
+        right: 30px;
+        font-size: 25px;
+        fill: transparent;
+        opacity: 1;
+        color: black;
     }
+    .full {
+        position: absolute;
+        right: 30px;
+        font-size: 25px;
+        transform: scale(0);
+        background:linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+    }
+    &:hover {
+        .empty {
+            opacity: 0;
+        }
+        .full {  
+            transform: scale(1);
+            transition: transform 500ms ease-in-out;
+            transform-origin: bottom center;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    } 
 }
 
 .element__carte {
@@ -372,8 +402,12 @@ footer {
         .objet__prix {
             position:absolute;
             background-color: white;
-            padding-left: 280px;
             bottom: 15px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            padding: 20px 20px 0 20px;
+            background : linear-gradient(270deg, white, white, white, transparent)
         }
 
         .btn__hover {

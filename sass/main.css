@@ -252,6 +252,7 @@
   font-size: 25px;
   fill: transparent;
   opacity: 1;
+  color: black;
 }
 
 .carte__heart .full {
@@ -278,6 +279,8 @@
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 footer {
@@ -363,6 +366,42 @@ footer li i {
   font-size: 25px;
 }
 
+.element__titre .empty {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  fill: transparent;
+  opacity: 1;
+  color: black;
+}
+
+.element__titre .full {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+}
+
+.element__titre:hover .empty {
+  opacity: 0;
+}
+
+.element__titre:hover .full {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .element__carte {
   font-family: "Roboto-Regular";
   display: -webkit-box;
@@ -434,8 +473,13 @@ footer li i {
 .element__carte .carte__container .carte__objet .objet__prix {
   position: absolute;
   background-color: white;
-  padding-left: 280px;
   bottom: 15px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 20px 20px 0 20px;
+  background: -webkit-gradient(linear, right top, left top, from(white), color-stop(white), color-stop(white), to(transparent));
+  background: linear-gradient(270deg, white, white, white, transparent);
 }
 
 .element__carte .carte__container .carte__objet .btn__hover {
