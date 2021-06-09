@@ -1,39 +1,20 @@
-@import url(../utils/variables.css);
-@import url(../base/police.css);
-@import url(../base/police.css);
-@import url(../utils/variables.css);
 @font-face {
   font-family: 'Shrikhand-Regular';
-  src: url("/font/Shrikhand-Regular.ttf.woff") format("woff"), url("/font/Shrikhand-Regular.ttf.svg#Shrikhand-Regular") format("svg"), url("/font/Shrikhand-Regular.ttf.eot"), url("/font/Shrikhand-Regular.ttf.eot?#iefix") format("embedded-opentype");
+  src: url("../font/Shrikhand-Regular.ttf.woff") format("woff"), url("../font/Shrikhand-Regular.ttf.svg#Shrikhand-Regular") format("svg"), url("../font/Shrikhand-Regular.ttf.eot"), url("../font/Shrikhand-Regular.ttf.eot?#iefix") format("embedded-opentype");
 }
 
 @font-face {
   font-family: 'Roboto-Regular';
   font-style: normal;
   font-weight: normal;
-  src: url("/font/Roboto-Regular.woff") format("woff");
+  src: url("../font/Roboto-Regular.woff") format("woff");
 }
 
-@-webkit-keyframes heart {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-
-@keyframes heart {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -171,11 +152,11 @@
   padding-left: 20px;
 }
 
-.site__btn--deguster {
+.site__btn:hover {
   background-color: #eeeeee;
 }
 
-.site__btn--deguster i {
+.site__btn:hover i {
   color: #9356DC;
 }
 
@@ -333,26 +314,6 @@ footer li i {
   color: white;
   width: 17px;
   padding-right: 25px;
-}
-
-@media only screen and (min-width: 768px) {
-  .restaurants__conteneur {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .menu {
