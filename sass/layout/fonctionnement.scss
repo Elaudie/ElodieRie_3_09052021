@@ -43,7 +43,7 @@
         font-weight: 500;
         padding-left: 20px;
     }
-    &--deguster {
+    &:hover {
         background-color: darken($grisclair, 3);
         i {
             color: $couleur-primaire;

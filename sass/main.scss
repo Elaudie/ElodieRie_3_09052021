@@ -1,16 +1,16 @@
-@import "./base/police";
+@import "./base/police.css";
 
-@import "./components/animations";
+@import "./components/animations.css";
 
 @import "./layout/logo";
-@import "./layout/localisation";
+@import "./layout/localisation.css";
 @import "./layout/presentations";
-@import "./layout/fonctionnement";
-@import "./layout/restaurants";
+@import "./layout/fonctionnement.scss";
+@import "./layout/restaurants.css";
 @import "./layout/footer";
 
-@import "./utils/variables";
-@import "./utils/breakpoint";
+@import "./utils/variables.css";
+@import "./utils/breakpoint.css";
 
 //page
 

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AAAA,uBAAuB,CAAC;IACxB,SAAS,EAAE,IAAI;IACf,eAAe,EAAE,YAAY;IAC7B,cAAc,EAAE,GAAG;GAClB",
+    "sources": [
+        "breakpoint.scss"
+    ],
+    "names": [],
+    "file": "breakpoint.css"
+}

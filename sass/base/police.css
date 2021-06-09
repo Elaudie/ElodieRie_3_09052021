@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Shrikhand-Regular';
+  src: url("/font/Shrikhand-Regular.ttf.woff") format("woff"), url("/font/Shrikhand-Regular.ttf.svg#Shrikhand-Regular") format("svg"), url("/font/Shrikhand-Regular.ttf.eot"), url("/font/Shrikhand-Regular.ttf.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/font/Roboto-Regular.woff") format("woff");
+}
+/*# sourceMappingURL=police.css.map */
