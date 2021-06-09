@@ -10,6 +10,82 @@
   src: url("../font/Roboto-Regular.woff") format("woff");
 }
 
+.loading_title {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Shrikhand-Regular';
+  padding-top: 15px;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #99E2D0;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+.loader {
+  color: #FF79DA;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 25px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -360,16 +436,11 @@ footer li i {
   padding-bottom: 25px;
 }
 
-.element__titre .fa-heart {
-  position: absolute;
-  right: 30px;
-  font-size: 25px;
-}
-
 .element__titre .empty {
   position: absolute;
   right: 30px;
   font-size: 25px;
+  padding-top: 6px;
   fill: transparent;
   opacity: 1;
   color: black;
@@ -379,6 +450,7 @@ footer li i {
   position: absolute;
   right: 30px;
   font-size: 25px;
+  padding-top: 6px;
   -webkit-transform: scale(0);
           transform: scale(0);
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -449,7 +521,6 @@ footer li i {
   background-color: white;
   border-radius: 15px;
   display: block;
-  width: 95%;
   height: 60px;
   -webkit-box-shadow: 5px 5px 15px #D5D5D5;
           box-shadow: 5px 5px 15px #D5D5D5;
