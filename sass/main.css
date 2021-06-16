@@ -364,7 +364,7 @@
   right: 30px;
   bottom: 20px;
   font-size: 25px;
-  fill: transparent;
+  fill-opacity: transparent;
   opacity: 1;
   color: black;
 }
@@ -481,7 +481,7 @@ footer li i {
   right: 30px;
   font-size: 25px;
   padding-top: 6px;
-  fill: transparent;
+  fill-opacity: transparent;
   opacity: 1;
   color: black;
 }
@@ -737,7 +737,7 @@ footer li i {
   }
   .fonctionnement
 .fonctionnement__site .site__btn {
-    width: calc(100%-34px);
+    width: calc(100% - 34px);
   }
   footer {
     display: -webkit-box;
@@ -748,12 +748,13 @@ footer li i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: space-between;
-            flex-direction: space-between;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
   }
   .element__carte .carte--responsive {
