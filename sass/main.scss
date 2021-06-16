@@ -600,6 +600,13 @@ footer {
             }
         }
 
+        .element__carte {
+            .carte--responsive {
+                display:flex;
+                justify-content: space-between;
+            }
+        }
+
 
 
         
