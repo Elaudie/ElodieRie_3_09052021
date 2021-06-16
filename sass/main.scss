@@ -57,7 +57,7 @@ $font2: 'Shrikhand-Regular';
 .loader:before,
 .loader:after {
   position: absolute;
-  top: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   content: '';
 }
 .loader:before {
@@ -557,4 +557,32 @@ footer {
             transform: rotate(360deg);
             transition: transform 500ms ease-in-out;
         }
+    }
+
+    //responsive 
+
+    @media only screen and (min-width: 992px) {
+        .restaurants
+        .restaurants__conteneur {
+            display: flex;
+            flex-direction: row;}
+
+        .fonctionnement 
+        .fonctionnement__site {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            ul {
+                display: flex;
+                flex-direction: space-between;
+            }
+        }
+
+
+
+        
     }
