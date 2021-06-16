@@ -725,5 +725,8 @@ footer li i {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .carte__container .objet__btn {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
