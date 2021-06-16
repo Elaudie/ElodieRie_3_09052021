@@ -376,6 +376,7 @@ footer h3 {
 
 footer ul {
   padding: 0;
+  width: 100%;
 }
 
 footer li {
@@ -662,8 +663,12 @@ footer li i {
 }
 
 @media only screen and (min-width: 992px) {
-  .restaurants
-.restaurants__conteneur {
+  .restaurants h3 {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .restaurants .restaurants__conteneur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -671,6 +676,13 @@ footer li i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurants .restaurants__conteneur .carte {
+    max-width: 550px;
   }
   .fonctionnement
 .fonctionnement__site {
@@ -681,17 +693,19 @@ footer li i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .footer {
+  .fonctionnement
+.fonctionnement__site .site__btn {
+    width: 28%;
+  }
+  footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
-  .footer ul {
+  footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -699,6 +713,9 @@ footer li i {
     -webkit-box-direction: normal;
         -ms-flex-direction: space-between;
             flex-direction: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

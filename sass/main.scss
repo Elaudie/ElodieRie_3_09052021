@@ -328,6 +328,7 @@ footer {
     }
     ul {
         padding: 0;
+        width: 100%;
     }
     li {
         padding: 3px 0;
@@ -562,23 +563,40 @@ footer {
     //responsive 
 
     @media only screen and (min-width: 992px) {
-        .restaurants
+        .restaurants{
+            h3 {
+                padding-bottom: 15px;
+                text-align: center;
+                font-size: 30px;
+            }
         .restaurants__conteneur {
             display: flex;
-            flex-direction: row;}
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .carte {
+                max-width: 550px;
+            }
+        }
+    }
 
         .fonctionnement 
         .fonctionnement__site {
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
+            .site__btn {
+                width: 28%;
+            }
         }
 
-        .footer {
+        footer {
             display: flex;
-            flex-direction: row;
             ul {
                 display: flex;
                 flex-direction: space-between;
+                justify-content: space-around;
+                width: 100%;
             }
         }
 
