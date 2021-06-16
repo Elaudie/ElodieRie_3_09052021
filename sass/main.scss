@@ -33,6 +33,24 @@ $font2: 'Shrikhand-Regular';
     padding-top: 15px;
 }
 
+.anim_loading {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+       
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+   
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+   
+    -webkit-animation: vanish 4s;
+    animation: vanish 4s;
+}
+
 .loader,
 .loader:before,
 .loader:after {
@@ -80,6 +98,7 @@ $font2: 'Shrikhand-Regular';
     height: 5em;
   }
 }
+
 @keyframes load1 {
   0%,
   80%,
@@ -92,6 +111,24 @@ $font2: 'Shrikhand-Regular';
     height: 5em;
   }
 }
+
+@-webkit-keyframes vanish {
+    0% {
+      display:block
+    }
+    100% {
+      display:none;  
+    }
+  }
+  
+  @keyframes vanish {
+    0% {
+      display:block
+    }
+    100% {
+      display:none;  
+    }
+  }
 
 
 //page
