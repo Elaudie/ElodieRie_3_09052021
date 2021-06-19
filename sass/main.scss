@@ -43,20 +43,22 @@ $font2: 'Shrikhand-Regular';
 
 .anim_loading {
     position: fixed;
+    display: block;	
     background-color: white;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-       
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-   
     -webkit-animation-play-state: running;
     animation-play-state: running;
-   
     -webkit-animation: vanish 4s;
     animation: vanish 4s;
+    overflow: hidden; 
+    opacity: 1;
+    animation-fill-mode: forwards;  
+    z-index: 9999; 
 }
 
 .loader,
@@ -121,20 +123,22 @@ $font2: 'Shrikhand-Regular';
 }
 
 @-webkit-keyframes vanish {
-    0% {
-      display:block
-    }
-    100% {
-      display:none;  
-    }
-  }
+    90% {
+        opacity: 1; 
+      }
+      100% {
+        z-index: 0; 
+        opacity: 0; 
+}
+}
   
   @keyframes vanish {
-    0% {
-      display:block
+    90% {
+        opacity: 1; 
     }
     100% {
-      display:none;  
+        z-index: 0; 
+        opacity: 0;
     }
   }
 
@@ -502,7 +506,7 @@ footer {
         }
 
         .objet__btn p:nth-of-type(2){
-            padding :0 60px 0 10px;
+            padding :0 60px 10px 10px;
         }
 
         .objet__prix {
@@ -521,7 +525,7 @@ footer {
             font-size: 1.1em;
             color: white;
             text-align: center;
-            height: 60px;
+            height: 100%;
             padding: 10px 0;
             width: 55px;
             line-height: 40px;
@@ -600,6 +604,54 @@ footer {
         }
     }
 
+    //animation affichage menus
+
+.element__carte {
+    .carte__container {
+        .carte__objet { 
+            animation: fadetoshow 0.4s; 
+            animation-fill-mode: forwards;
+            opacity: 0;
+            animation-timing-function: ease-in-out;
+        }
+        .carte__objet:nth-child(2) { 
+            -webkit-animation-delay: 0.2s; 
+            animation-delay: 0.2s;
+        }
+        .carte__objet:nth-child(3) { 
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+    }
+}
+    
+    @-webkit-keyframes fadetoshow {
+      0% {
+        opacity: 0; 
+        margin-top: 5px; 
+        margin-bottom: 0px; 
+      }
+      100% {
+        opacity: 1; 
+        margin-top: 0px; 
+        margin-bottom: 5px;
+      }
+    }
+    
+    @keyframes fadetoshow {
+      0% {
+        opacity: 0;
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
+      100% {
+        opacity: 1;
+        margin-top: 0px;
+        margin-bottom: 5px;
+      }
+    }
+    
+
     //responsive 
 
     @media only screen and (min-width: 992px) {
@@ -626,7 +678,7 @@ footer {
             flex-direction: row;
             justify-content: space-between;
             .site__btn {
-                width: calc(100% - 34px);
+                width: calc(33.33% - 34px);
             }
         }
 
@@ -652,6 +704,11 @@ footer {
                 width: 90%;
             }
         }
+
+        .element__carte .carte__bloc {
+            width: calc( 33.33% - 16px );
+            padding-bottom: 20px;
+          }
 
 
 

@@ -26,6 +26,7 @@
 
 .anim_loading {
   position: fixed;
+  display: block;
   background-color: white;
   width: 100vw;
   height: 100vh;
@@ -37,6 +38,11 @@
   animation-play-state: running;
   -webkit-animation: vanish 4s;
   animation: vanish 4s;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 9999;
 }
 
 .loader,
@@ -112,20 +118,22 @@
 }
 
 @-webkit-keyframes vanish {
-  0% {
-    display: block;
+  90% {
+    opacity: 1;
   }
   100% {
-    display: none;
+    z-index: 0;
+    opacity: 0;
   }
 }
 
 @keyframes vanish {
-  0% {
-    display: block;
+  90% {
+    opacity: 1;
   }
   100% {
-    display: none;
+    z-index: 0;
+    opacity: 0;
   }
 }
 
@@ -579,7 +587,7 @@ footer li i {
 }
 
 .element__carte .carte__container .carte__objet .objet__btn p:nth-of-type(2) {
-  padding: 0 60px 0 10px;
+  padding: 0 60px 10px 10px;
 }
 
 .element__carte .carte__container .carte__objet .objet__prix {
@@ -599,7 +607,7 @@ footer li i {
   font-size: 1.1em;
   color: white;
   text-align: center;
-  height: 60px;
+  height: 100%;
   padding: 10px 0;
   width: 55px;
   line-height: 40px;
@@ -699,6 +707,52 @@ footer li i {
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
+.element__carte .carte__container .carte__objet {
+  -webkit-animation: fadetoshow 0.4s;
+          animation: fadetoshow 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.element__carte .carte__container .carte__objet:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.element__carte .carte__container .carte__objet:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes fadetoshow {
+  0% {
+    opacity: 0;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+@keyframes fadetoshow {
+  0% {
+    opacity: 0;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .restaurants h3 {
     padding-bottom: 15px;
@@ -737,7 +791,7 @@ footer li i {
   }
   .fonctionnement
 .fonctionnement__site .site__btn {
-    width: calc(100% - 34px);
+    width: calc(33.33% - 34px);
   }
   footer {
     display: -webkit-box;
@@ -767,6 +821,10 @@ footer li i {
   }
   .carte__container .objet__btn {
     width: 90%;
+  }
+  .element__carte .carte__bloc {
+    width: calc( 33.33% - 16px);
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
