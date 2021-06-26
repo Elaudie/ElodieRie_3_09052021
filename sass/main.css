@@ -165,8 +165,9 @@
   padding-right: 10px;
 }
 
-.localisation .localisation__icone h4 {
+.localisation .localisation__icone span {
   display: inline-block;
+  font-weight: bold;
 }
 
 .presentation {
@@ -178,7 +179,7 @@
   padding-top: 10px;
 }
 
-.presentation .presentation__site h2 {
+.presentation .presentation__site h1 {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -186,9 +187,11 @@
   padding: 0 80px;
 }
 
-.presentation .presentation__site p {
+.presentation .presentation__site h2 {
   text-align: center;
   padding: 10px 45px;
+  font-weight: normal;
+  font-size: 1em;
 }
 
 .presentation .presentation__btn {
@@ -208,6 +211,11 @@
   padding: 15px 20px;
   color: white;
   text-decoration: none;
+}
+
+.presentation .presentation__btn a:hover {
+  -webkit-box-shadow: 5px 7px 9px #353535;
+          box-shadow: 5px 7px 9px #353535;
 }
 
 .fonctionnement {
@@ -275,7 +283,7 @@
 }
 
 .site__btn:hover {
-  background-color: #eeeeee;
+  background-color: rgba(147, 86, 220, 0.15);
 }
 
 .site__btn:hover i {
@@ -412,7 +420,7 @@ footer {
   padding: 20px 20px 30px 20px;
 }
 
-footer h3 {
+footer h5 {
   font-family: "Shrikhand-Regular";
   margin-bottom: 15px;
   font-weight: normal;
@@ -479,7 +487,7 @@ footer li i {
   color: black;
 }
 
-.element__titre h2 {
+.element__titre h1 {
   font-family: "Shrikhand-Regular";
   padding-bottom: 25px;
 }
@@ -538,15 +546,16 @@ footer li i {
   padding-bottom: 20px;
 }
 
-.element__carte .carte__bloc h3 {
+.element__carte .carte__bloc h2 {
   text-transform: uppercase;
   border-bottom: 3px solid #99E2D0;
   margin-bottom: 10px;
   max-width: 50px;
   overflow-x: visible;
+  font-size: 1.3em;
 }
 
-.element__carte .carte__bloc h3:after {
+.element__carte .carte__bloc h2:after {
   display: block;
   background: none repeat scroll 0 0 #99E2D0;
   position: relative;
@@ -577,29 +586,25 @@ footer li i {
   margin-bottom: 17px;
 }
 
-.element__carte .carte__container .carte__objet .objet__btn p {
+.element__carte .carte__container .carte__objet .objet__btn h3 {
   display: block;
-}
-
-.element__carte .carte__container .carte__objet .objet__btn p:first-child {
-  font-weight: bold;
+  font-size: 1em;
   padding: 10px 60px 0 10px;
 }
 
-.element__carte .carte__container .carte__objet .objet__btn p:nth-of-type(2) {
+.element__carte .carte__container .carte__objet .objet__btn h4 {
+  display: block;
+  font-weight: normal;
   padding: 0 60px 10px 10px;
 }
 
 .element__carte .carte__container .carte__objet .objet__prix {
   position: absolute;
-  background-color: white;
   bottom: 15px;
   height: 100%;
   top: 0;
   right: 0;
   padding: 20px 20px 0 20px;
-  background: -webkit-gradient(linear, right top, left top, from(white), color-stop(white), color-stop(white), to(transparent));
-  background: linear-gradient(270deg, white, white, white, transparent);
 }
 
 .element__carte .carte__container .carte__objet .btn__hover {
@@ -639,19 +644,18 @@ footer li i {
   color: white;
 }
 
+.commander:hover {
+  -webkit-box-shadow: 7px 7px 9px #353535;
+          box-shadow: 7px 7px 9px #353535;
+}
+
 .objet__btn {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.objet__btn .objet__btn p:first-child {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.objet__btn .objet__btn p:nth-of-type(2) {
+.objet__btn h3, .objet__btn h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -674,7 +678,7 @@ footer li i {
   transition: 400ms;
 }
 
-.objet__btn:hover .objet__btn p:first-child {
+.objet__btn:hover .objet__btn h3 {
   width: 70%;
   -webkit-transition: width 500ms ease-in-out;
   transition: width 500ms ease-in-out;
@@ -705,6 +709,16 @@ footer li i {
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.objet__btn:hover .objet__caption {
+  width: calc(100% - 50px);
+}
+
+.objet__caption {
+  width: 100%;
+  -webkit-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
 }
 
 .element__carte .carte__container .carte__objet {
