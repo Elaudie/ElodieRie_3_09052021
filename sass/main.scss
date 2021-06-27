@@ -127,8 +127,8 @@ $font2: 'Shrikhand-Regular';
         opacity: 1; 
       }
       100% {
-        z-index: 0; 
-        opacity: 0; 
+        transform: translateX(-1440px);
+        visibility: hidden; 
 }
 }
   
@@ -137,8 +137,8 @@ $font2: 'Shrikhand-Regular';
         opacity: 1; 
     }
     100% {
-        z-index: 0; 
-        opacity: 0;
+        transform: translateX(-1440px);
+        visibility: hidden;
     }
   }
 
@@ -164,9 +164,17 @@ $font2: 'Shrikhand-Regular';
         i {
             padding-right: 10px;
         }
-        span {
+        input {
             display: inline-block;
-            font-weight: bold;
+            justify-items: start;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 700;
+            color: #353535;
+            padding: 10px 0px;
+            padding-left: 15px;
+            background-color: #EAEAEA;
         }
     }
 }
