@@ -118,6 +118,10 @@
 }
 
 @-webkit-keyframes vanish {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   90% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -131,12 +135,18 @@
 }
 
 @keyframes vanish {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   90% {
     opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1440px);
-            transform: translateX(-1440px);
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
     visibility: hidden;
   }
 }
