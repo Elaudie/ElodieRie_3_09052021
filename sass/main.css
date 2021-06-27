@@ -399,8 +399,8 @@
   right: 20px;
 }
 
-.carte__heart i {
-  padding: 15px;
+.carte__heart {
+  width: 15px;
 }
 
 .carte__heart .empty {
