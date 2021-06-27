@@ -120,6 +120,8 @@
 @-webkit-keyframes vanish {
   90% {
     opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(-1440px);
@@ -161,6 +163,7 @@
   background-color: #e9e9e9;
   -webkit-box-shadow: inset 0 2.5px 3px #D5D5D5;
           box-shadow: inset 0 2.5px 3px #D5D5D5;
+  padding: 7px;
 }
 
 .localisation .localisation__icone i {
@@ -178,6 +181,7 @@
   padding: 10px 0px;
   padding-left: 15px;
   background-color: #EAEAEA;
+  width: 150px;
 }
 
 .presentation {
