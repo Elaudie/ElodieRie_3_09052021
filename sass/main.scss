@@ -393,6 +393,7 @@ footer {
         font-family: $font2;
         margin-bottom: 15px;
         font-weight: normal;
+        font-size: 20px,
     }
     ul {
         padding: 0;
@@ -401,6 +402,7 @@ footer {
     li {
         padding: 3px 0;
         list-style-type: none;
+        padding-left: 15px;
         a {
             color: white;
             text-decoration: none;
