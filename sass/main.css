@@ -399,12 +399,16 @@
   right: 20px;
 }
 
+.carte__heart {
+  margin: 30px;
+}
+
 .carte__heart .empty {
   position: absolute;
   right: 30px;
   bottom: 20px;
   font-size: 25px;
-  fill-opacity: transparent;
+  fill-opacity: 0;
   opacity: 1;
   color: black;
 }
@@ -521,7 +525,7 @@ footer li i {
   right: 30px;
   font-size: 25px;
   padding-top: 6px;
-  fill-opacity: transparent;
+  fill-opacity: 0;
   opacity: 1;
   color: black;
 }

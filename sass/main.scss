@@ -351,12 +351,13 @@ $font2: 'Shrikhand-Regular';
 }
 
 .carte__heart {
+    margin: 30px;
     .empty {
         position: absolute;
         right: 30px;
         bottom: 20px;
         font-size: 25px;
-        fill-opacity: transparent;
+        fill-opacity: 0;
         opacity: 1;
         color: black;
     }
@@ -457,7 +458,7 @@ footer {
         right: 30px;
         font-size: 25px;
         padding-top: 6px;
-        fill-opacity: transparent;
+        fill-opacity: 0;
         opacity: 1;
         color: black;
     }
