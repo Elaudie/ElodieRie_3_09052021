@@ -399,10 +399,6 @@
   right: 20px;
 }
 
-.carte__heart {
-  width: 15px;
-}
-
 .carte__heart .empty {
   position: absolute;
   right: 30px;
