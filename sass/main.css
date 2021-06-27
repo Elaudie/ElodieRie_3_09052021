@@ -399,8 +399,8 @@
   right: 20px;
 }
 
-.carte__heart {
-  margin: 30px;
+.carte__heart i {
+  margin: 15px;
 }
 
 .carte__heart .empty {
