@@ -761,9 +761,14 @@ footer li i {
   animation-delay: 0.2s;
 }
 
-.element__carte .carte__container .carte__objet:nth-child(4) {
+.element__carte .carte__container .carte__objet:nth-child(3) {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
+}
+
+.element__carte .carte__container .carte__objet:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
 
 @-webkit-keyframes fadetoshow {
